@@ -373,10 +373,10 @@ class DreamSpeed_Services extends DreamSpeed_Plugin_Base {
 			$domain_bucket = $dsobject['bucket'];
 		}
 		elseif ( is_ssl() || $this->get_setting( 'force-ssl' ) ) {
-			$domain_bucket = 'objects.dreamhost.com/' . $dsobject['bucket'];
+			$domain_bucket = 'kilatstorage.com/' . $dsobject['bucket'];
 		}
 		else {
-			$domain_bucket = $dsobject['bucket'] . '.objects.dreamhost.com';
+			$domain_bucket = $dsobject['bucket'] . '.kilatstorage.com';
 		}
 
 		$url = $scheme . '://' . $domain_bucket . '/' . $dsobject['key'];
@@ -621,9 +621,9 @@ class DreamSpeed_Services extends DreamSpeed_Plugin_Base {
 		if ( $this->get_setting( 'cloudfront' ) ) {
 			$domain_base = $this->get_setting( 'cloudfront' );
 		} elseif ( is_ssl() || $this->get_setting( 'force-ssl' ) ) {
-			$domain_base = 'objects.dreamhost.com/'.$this->get_setting( 'bucket' );
+			$domain_base = 'kilatstorage.com/'.$this->get_setting( 'bucket' );
 		} else {
-			$domain_base = $this->get_setting( 'bucket' ) . '.objects.dreamhost.com';
+			$domain_base = $this->get_setting( 'bucket' ) . '.kilatstorage.com';
 		}
 
 		$url = $scheme . '://' . $domain_base . '/' . esc_attr( $this->get_setting( 'object-prefix' ) );

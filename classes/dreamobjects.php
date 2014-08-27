@@ -124,7 +124,7 @@ class DreamSpeed_DHO_Services extends DreamSpeed_Plugin_Base {
 			$args = array(
 			    'key'      => $this->get_access_key_id(),
 			    'secret'   => $this->get_secret_access_key(),
-			    'base_url' => 'http://objects.dreamhost.com',
+			    'base_url' => 'http://kilatstorage.com',
 			);
 			$args = apply_filters( 'aws_get_client_args', $args );
 			$this->client = AwsCDN::factory( $args );

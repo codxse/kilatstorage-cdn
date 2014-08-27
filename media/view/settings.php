@@ -95,7 +95,7 @@ if (isset( $_GET['error'] ) ) {
 	<td>
 		<h3><?php _e( 'CDN Path Settings', 'dreamspeed-cdn' ); ?></h3>
 		
-		<p><?php _e( 'If you use an alias for your CDN (like http://cdn.example.com) then you can tell DreamSpeed to use that instead of the default http://objects.dreamhost.com/bucketname. Both URLs will always work, but pretty CDN is pretty.', 'dreamspeed-cdn' ); ?></p>
+		<p><?php _e( 'If you use an alias for your CDN (like http://cdn.example.com) then you can tell DreamSpeed to use that instead of the default http://kilatstorage.com/bucketname. Both URLs will always work, but pretty CDN is pretty.', 'dreamspeed-cdn' ); ?></p>
 	
 		<label><?php _e( 'Domain Name:', 'dreamspeed-cdn' ); ?></label> <br />
 			<?php 
